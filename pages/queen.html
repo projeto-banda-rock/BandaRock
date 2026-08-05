@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Queen</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Montserrat:wght@400;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="/style/queen.css">
 </head>
+
 <body>
   <a href="/index.html" class="back">← Voltar</a>
   <div class="card">
     <h1>Queen</h1>
-    <p>Com a voz inigualável e a extravagância de Freddie Mercury, aliadas à guitarra orquestral de Brian May, a precisão de John Deacon e a força de Roger Taylor, o Queen criou hinos imortais como "Bohemian Rhapsody", "We Will Rock You" e "Radio Ga Ga".</p>
+    <p>Com a voz inigualável e a extravagância de Freddie Mercury, aliadas à guitarra orquestral de Brian May, a
+      precisão de John Deacon e a força de Roger Taylor, o Queen criou hinos imortais como "Bohemian Rhapsody", "We Will
+      Rock You" e "Radio Ga Ga".</p>
     <div style="display:flex; gap: 20px; justify-content: center;">
       <button class="btn-royal" onclick="openCrown()">Live Aid 1985 (Modal Coroa)</button>
-      <button class="btn-royal" style="background:transparent; border: 2px solid #f7d070; color:#f7d070;" onclick="openPanel()">Integrantes (Painel)</button>
+      <button class="btn-royal" style="background:transparent; border: 2px solid #f7d070; color:#f7d070;"
+        onclick="openPanel()">Integrantes (Painel)</button>
     </div>
   </div>
 
   <div class="crown-overlay" id="crownModal">
     <div class="crown-modal">
       <h3 style="font-family:'Cinzel Decorative'; color:#f7d070; margin-bottom: 15px;">O Maior Show do Rock</h3>
-      <p style="color:#e6c2a0; font-size: 0.95rem;">Em 21 minutos no estádio de Wembley durante o Live Aid de 1985, o Queen roubou o espetáculo mundial, realizando aquela que é considerada por críticos a maior apresentação ao vivo da história da música.</p>
+      <p style="color:#e6c2a0; font-size: 0.95rem;">Em 21 minutos no estádio de Wembley durante o Live Aid de 1985, o
+        Queen roubou o espetáculo mundial, realizando aquela que é considerada por críticos a maior apresentação ao vivo
+        da história da música.</p>
       <button class="btn-royal" style="margin-top: 20px; padding: 8px 20px;" onclick="closeCrown()">Fechar</button>
     </div>
   </div>
@@ -37,6 +46,29 @@
     <button class="btn-royal" style="margin-top: 30px; padding: 8px 20px;" onclick="closePanel()">Voltar</button>
   </div>
 
+  <div class="crown-overlay" id="crownModal">
+    <div class="crown-modal">
+      <h3 style="font-family:'Cinzel Decorative'; color:#f7d070; margin-bottom: 15px;">O Maior Show do Rock</h3>
+      <p style="color:#e6c2a0; font-size: 0.95rem;">Em 21 minutos no estádio de Wembley durante o Live Aid de 1985, o
+        Queen roubou o espetáculo mundial, realizando aquela que é considerada por críticos a maior apresentação ao vivo
+        da história da música.</p>
+      <button class="btn-royal" style="margin-top: 20px; padding: 8px 20px;" onclick="closeCrown()">Fechar</button>
+    </div>
+  </div>
+
+  <div class="panel-side" id="panelSide">
+    <h2 style="font-family:'Cinzel Decorative'; color:#f7d070; margin-bottom:20px;">Formação Clássica</h2>
+    <ul style="list-style: none; line-height: 2.2; color:#fff;">
+      <li>👑 Freddie Mercury (Vocal)</li>
+      <li>🎸 Brian May (Guitarra)</li>
+      <li>🥁 Roger Taylor (Bateria)</li>
+      <li>🎸 John Deacon (Baixo)</li>
+    </ul>
+    <button class="btn-royal" style="margin-top: 30px; padding: 8px 20px;" onclick="closePanel()">Voltar</button>
+  </div>
+
+
   <script src="/script/queen.js"></script>
 </body>
+
 </html>
