@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +8,42 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;900&family=Lora&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style/ledzeppelin.css">
 </head>
+
 <body>
   <a href="/index.html" class="nav">← Voltar ao Portal</a>
   <div class="card">
     <h1>Led Zeppelin</h1>
-    <p>Pioneiros do Hard Rock e Heavy Metal, Jimmy Page, Robert Plant, John Paul Jones e John Bonham fundiram blues pesado, música celta e misticismo para criar uma das sonoridades mais colossais da história. Faixas como "Stairway to Heaven" e "Kashmir" definiram o padrão do rock de arena.</p>
+    <p>Pioneiros do Hard Rock e Heavy Metal, Jimmy Page, Robert Plant, John Paul Jones e John Bonham fundiram blues
+      pesado, música celta e misticismo para criar uma das sonoridades mais colossais da história. Faixas como "Stairway
+      to Heaven" e "Kashmir" definiram o padrão do rock de arena.</p>
     <div style="text-align: center;">
       <button class="btn-gold" onclick="openFullscreen()">Os 4 Símbolos</button>
       <button class="btn-gold" onclick="openLeftDrawer()">Membros da Banda</button>
     </div>
   </div>
 
+  <!-- Fullscreen Modal -->
+  <div class="modal-fullscreen" id="fsModal">
+    <h2 style="font-family:'Cinzel'; font-size: 2.5rem; color:#f3e5ab; margin-bottom:20px;">Os Símbolos do Led Zeppelin
+      IV</h2>
+    <p style="max-width: 600px; text-align: center; color: #d4af37;">Cada integrante escolheu um símbolo esotérico para
+      representar sua identidade no lendário álbum sem título de 1971: Zoso (Page), Círculos Interconectados (Bonham),
+      Pluma de Ma'at (Plant) e Triskelion (Jones).</p>
+    <button class="btn-gold" style="margin-top: 30px;" onclick="closeFullscreen()">Fechar</button>
+  </div>
+
+  <!-- Drawer Esquerda -->
+  <div class="drawer-left" id="leftDrawer">
+    <h3 style="font-family:'Cinzel'; color:#f3e5ab; margin-bottom: 20px;">Integrantes</h3>
+    <p style="color:#c5b89a; font-size: 0.95rem; margin-bottom: 15px;">• <strong>Robert Plant:</strong> Vocais</p>
+    <p style="color:#c5b89a; font-size: 0.95rem; margin-bottom: 15px;">• <strong>Jimmy Page:</strong> Guitarras</p>
+    <p style="color:#c5b89a; font-size: 0.95rem; margin-bottom: 15px;">• <strong>John Paul Jones:</strong> Baixo e
+      Teclados</p>
+    <p style="color:#c5b89a; font-size: 0.95rem; margin-bottom: 15px;">• <strong>John Bonham:</strong> Bateria</p>
+    <button class="btn-gold" onclick="closeLeftDrawer()" style="margin-top: 20px;">Fechar</button>
+  </div>
 
   <script src="/script/ledzeppelin.js"></script>
 </body>
+
 </html>
