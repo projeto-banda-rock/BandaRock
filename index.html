@@ -1,55 +1,63 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ESTATEC - Login</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Clássico - As maiores bandas de rock da história.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/index.css">
 </head>
-
 <body>
+  <header>
+    <h1>Rock Clássico</h1>
+    <p class="subtitle">Explore a história, curiosidades e discografia das 10 maiores bandas da história do Rock.</p>
+  </header>
 
-    <main class="login-container">
-        <div class="logo-area">
-            <img src="../img/estatec.png" alt="ESTATEC" class="logo-img">
-        </div>
+  <main class="grid-container">
+    <div class="band-card">
+      <div><h2>The Beatles</h2><p>Psicodelia, inovação e a maior revolução pop-rock dos anos 60.</p></div>
+      <a href="pages/beatles.html" class="btn-visit">Ver Página</a>
+    </div>
+    <div class="band-card">
+      <div><h2>The Rolling Stones</h2><p>Atitude, blues rock visceral e puro Rock & Roll rebelde.</p></div>
+      <a href="pages/stones.html" class="btn-visit">Ver Página</a>
+    </div>
+    <div class="band-card">
+      <div><h2>Led Zeppelin</h2><p>O som pesado e místico que definiu o Hard Rock clássico.</p></div>
+      <a href="pages/ledzeppelin.html" class="btn-visit">Ver Página</a>
+    </div>
+    <div class="band-card">
+      <div><h2>Pink Floyd</h2><p>Viagens psicodélicas, rock progressivo e espetáculos conceituais.</p></div>
+      <a href="pages/pinkfloyd.html" class="btn-visit">Ver Página</a>
+    </div>
+    <div class="band-card">
+      <div><h2>Queen</h2><p>Operático, performático e dono dos maiores hinos dos estádios.</p></div>
+      <a href="pages/queen.html" class="btn-visit">Ver Página</a>
+    </div>
+    <div class="band-card">
+      <div><h2>AC/DC</h2><p>Riffs eletrizantes, alta voltagem e puro Hard Rock direto.</p></div>
+      <a href="pages/acdc.html" class="btn-visit">Ver Página</a>
+    </div>
+    <div class="band-card">
+      <div><h2>Black Sabbath</h2><p>Os verdadeiros padrinhos sombrios do Heavy Metal mundial.</p></div>
+      <a href="pages/blacksabbath.html" class="btn-visit">Ver Página</a>
+    </div>
+    <div class="band-card">
+      <div><h2>The Who</h2><p>Energia explosiva, óperas rock e performances devastadoras.</p></div>
+      <a href="pages/thewho.html" class="btn-visit">Ver Página</a>
+    </div>
+    <div class="band-card">
+      <div><h2>Metallica</h2><p>Velocidade, agressividade e a soberania absoluta do Thrash Metal.</p></div>
+      <a href="pages/metallica.html" class="btn-visit">Ver Página</a>
+    </div>
+    <div class="band-card">
+      <div><h2>Nirvana</h2><p>A distorção, angústia e revolução do som Grunge dos anos 90.</p></div>
+      <a href="pages/nirvana.html" class="btn-visit">Ver Página</a>
+    </div>
+  </main>
 
-        <div class="login-card">
-            <h1>LOGIN</h1>
-            <form id="loginForm">
-                <div class="input-group">
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" placeholder="Ex.: estatec@gmail.com" required>
-                </div>
-
-                <div class="input-group">
-                    <label for="password">Senha:</label>
-                    <div class="password-wrapper">
-                        <input type="password" id="password" placeholder="Ex.: 123456" required>
-                        <button type="button" id="togglePassword" class="eye-icon">
-                            <span id="eyeOpen">👁️‍🗨️</span>
-                        </button>
-                    </div>
-                </div>
-
-                <button type="submit" class="btn-entrar">ENTRAR</button>
-                <a href="../"></a>
-            </form>
-
-            <div class="footer-links">
-                <a href="pages/redefinirSenha.html">ESQUECI A SENHA</a>
-                <div class="footer-links" id="forgotPassword">
-                </div>
-            </div>
-
-            <footer class="copyright">
-                © ESTATEC
-            </footer>
-    </main>
-
-    <script src="script/script.js"></script>
+  <footer>
+    <p>Rock Clássico &copy; 2026 - Desenvolvido por BandaRock</p>
+  </footer>
 </body>
-
 </html>
