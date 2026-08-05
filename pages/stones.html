@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rolling Stones - Leather & Rock</title>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/style/stones.css">
+</head>
+
+<body>
+    <a href="index.html" class="nav-back">&larr; Voltar</a>
+    <div class="wrapper">
+        <h1>The Rolling Stones</h1>
+        <p>Com sua atitude provocativa, performances incendiárias de Mick Jagger e os riffs lendários de Keith Richards,
+            os Rolling Stones encarnaram a essência do Rock & Roll rebelde por mais de seis décadas. Fundada em 1962, a
+            banda continua sendo o maior símbolo de longevidade na história do rock.</p>
+        <div class="actions">
+            <button class="btn-rock" onclick="toggleDrawer()">Álbuns Clássicos</button>
+            <button class="btn-rock" style="background:#333;" onclick="openLeatherModal()">Boca do Stones</button>
+        </div>
+    </div>
+
+    <!-- Drawer Modal -->
+    <div class="drawer" id="drawer1">
+        <span class="close-btn" onclick="toggleDrawer()">&times;</span>
+        <h2 style="color:#ff0033; margin-top: 30px; font-family:'Permanent Marker';">Discografia Essencial</h2>
+        <ul style="margin-top: 20px; line-height: 2.2; color:#bbb;">
+            <li>⚡ Beggars Banquet (1968)</li>
+            <li>⚡ Let It Bleed (1969)</li>
+            <li>⚡ Sticky Fingers (1971)</li>
+            <li>⚡ Exile on Main St. (1972)</li>
+        </ul>
+    </div>
+
+    <!-- Leather Center Modal -->
+    <div class="modal-box" id="leatherModal">
+        <div class="leather-card">
+            <span class="close-btn" onclick="closeLeatherModal()">&times;</span>
+            <h3 style="color:#ff0033; margin-bottom: 15px; font-family:'Permanent Marker';">O Logo "Tongue and Lips"
+            </h3>
+            <p style="font-size: 0.95rem;">Criado por John Pasche em 1970, a famosa boca com a língua de fora representa
+                a rebeldia da banda e os lábios marcantes de Mick Jagger. É a marca de rock mais reconhecida de todos os
+                tempos.</p>
+        </div>
+    </div>
+
+    <script src="/script/stones.js"></script>
+</body>
+
+</html>
