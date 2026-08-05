@@ -1,0 +1,240 @@
+/* Reset e Base */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #050505;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Container da Chuva de Discos */
+#vinyl-rain-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Estilo do Disco */
+.vinyl-item {
+  position: absolute;
+  top: -100px;
+  background: radial-gradient(circle, #111 18%, #2d2d2d 19%, #111 20%, #151515 40%, #000 100%);
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.85;
+  animation: fallAnimation linear forwards, spinAnimation linear infinite;
+}
+
+.vinyl-item::after {
+  content: '';
+  width: 32%;
+  height: 32%;
+  background-color: var(--label-color, #ff0055);
+  border-radius: 50%;
+  border: 2px solid #000;
+  box-shadow: inset 0 0 4px rgba(0,0,0,0.6);
+}
+
+@keyframes fallAnimation {
+  0% { top: -100px; opacity: 0; }
+  10% { opacity: 0.9; }
+  90% { opacity: 0.9; }
+  100% { top: 105vh; opacity: 0; }
+}
+
+@keyframes spinAnimation {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Efeito de Fundo */
+.grain-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, transparent 60%, rgba(0,0,0,0.8) 100%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Layout Principal */
+.hero-container {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.prism-light {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(135deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
+  filter: blur(120px);
+  opacity: 0.25;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.band-title {
+  font-family: 'Cinzel', serif;
+  font-size: 4rem;
+  letter-spacing: 12px;
+  color: #ffffff;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  margin-bottom: 5px;
+}
+
+.album-subtitle {
+  font-size: 1.1rem;
+  letter-spacing: 4px;
+  color: #888;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+/* Grupo de Botões */
+.btn-group {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.glow-btn {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 14px 28px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.glow-btn:hover {
+  background: #fff;
+  color: #000;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
+}
+
+.glow-btn.outline {
+  border-color: #555;
+  color: #aaa;
+}
+
+.glow-btn.outline:hover {
+  border-color: #fff;
+  color: #000;
+  background: #fff;
+}
+
+/* Modais */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.88);
+  backdrop-filter: blur(8px);
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.modal-card {
+  background: #111;
+  border: 1px solid #222;
+  padding: 40px;
+  max-width: 550px;
+  width: 100%;
+  position: relative;
+  border-radius: 4px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 2rem;
+  color: #666;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #fff;
+}
+
+.modal-title {
+  font-family: 'Cinzel', serif;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.rainbow-bar {
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(90deg, #e74c3c, #e67e22, #f1c40f, #2ecc71, #3498db, #9b59b6);
+  margin-bottom: 20px;
+}
+
+.modal-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #ccc;
+  margin-bottom: 25px;
+}
+
+.tracklist h3, .band-members h3 {
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.tracklist ul, .band-members ul {
+  list-style: none;
+}
+
+.tracklist li, .band-members li {
+  font-size: 0.9rem;
+  padding: 6px 0;
+  border-bottom: 1px solid #1a1a1a;
+  color: #ddd;
+}
+
+.tracklist li span {
+  color: #e74c3c;
+  margin-right: 10px;
+  font-weight: bold;
+}
