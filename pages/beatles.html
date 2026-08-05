@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Beatles</title>
+  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style/styleBeatles.css">
+</head>
+<body>
+  <a href="/index.html" class="nav-back">← Voltar ao Início</a>
+  <div class="container">
+    <h1>The Beatles</h1>
+    <p>Formada em Liverpool em 1960, a banda composta por John Lennon, Paul McCartney, George Harrison e Ringo Starr revolucionou a música popular mundial. Do Iê-Iê-Iê inicial às complexas experimentações em estúdio em "Sgt. Pepper's Lonely Hearts Club Band", os Beatles são a banda mais influente de todos os tempos.</p>
+    <div class="imagem">
+        <img src="/img/TheBeatles.jpg" alt="">
+    </div>
+    <div class="btn-group">
+      <button class="btn btn-1" onclick="abrirModal('modal1')">Ver Integrantes</button>
+      <button class="btn btn-2" onclick="abrirModal2()">Ver Curiosidade</button>
+    </div>
+  </div>
+
+  <div class="modalBeatles" id="modal1">
+    <div class="modalBeatles2">
+      <span class="close-btn" onclick="fecharModal('modal1')">x</span>
+      <h2 style="color: #e6cf00; font-family: 'Shrikhand';">Os Fab Four</h2>
+      <ul style="list-style: none; margin-top: 15px; text-align: left; line-height: 2;">
+        <li><strong>John Lennon:</strong> Vocalista, Guitarrrista, Órgão</li>
+        <li><strong>Paul McCartney:</strong> Vocalista, Baixista, Pianista</li>
+        <li><strong>George Harrison:</strong> Guitarrista de Solos, Cítara, Vocalista</li>
+        <li><strong>Ringo Starr:</strong> Baterista, Percussão, Vocalista</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="modal-bottom" id="modal2">
+    <div style="max-width: 800px; margin: 0 auto; position: relative;">
+      <span class="close-btn" onclick="fecharModal2()">x</span>
+      <h3 style="color: #00f0ff; margin-bottom: 10px;">Curiosidade Psicodélica</h3>
+      <p style="margin: 0;">Em 1967, durante as gravações do álbum Sgt. Pepper's, os Beatles foram os pioneiros no uso de loops de fita e efeitos reversos na música pop, influenciando toda a história da produção musical moderna.</p>
+    </div>
+  </div>
+
+  <script src="/script/scriptBeatles.js"></script>
+</body>
+</html>
