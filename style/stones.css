@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #121212;
+    background-image: radial-gradient(#222 15%, transparent 16%), radial-gradient(#222 15%, transparent 16%);
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+    color: #e0e0e0;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.nav-back {
+    color: #ff0033;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.wrapper {
+    max-width: 900px;
+    margin: 30px auto;
+    background: rgba(0, 0, 0, 0.85);
+    border: 2px solid #ff0033;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(255, 0, 51, 0.4);
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3.5rem;
+    color: #ff0033;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.actions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn-rock {
+    background: #ff0033;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 4px;
+}
+
+.btn-rock:hover {
+    background: #cc0029;
+}
+
+/* MODAL 1: Gaveta Lateral Direita */
+.drawer {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 350px;
+    height: 100%;
+    background: #1a1a1a;
+    border-left: 3px solid #ff0033;
+    padding: 30px;
+    transition: right 0.3s ease;
+    z-index: 200;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.8);
+}
+
+.drawer.open {
+    right: 0;
+}
+
+.close-btn {
+    color: #ff0033;
+    font-size: 2rem;
+    cursor: pointer;
+    float: right;
+}
+
+/* MODAL 2: Central Leather Box */
+.modal-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 201;
+}
+
+.leather-card {
+    background: #222;
+    border: 2px dashed #888;
+    padding: 30px;
+    width: 90%;
+    max-width: 450px;
+    border-radius: 6px;
+    position: relative;
+}
