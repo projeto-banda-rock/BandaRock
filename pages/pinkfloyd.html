@@ -3,31 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pink Floyd - Experience</title>
+  <title>Pink Floyd</title>
   <link rel="stylesheet" href="/style/pinkfloyd.css">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Camada de Chuva de Discos -->
+  <!--Camada de Chuva de Discos-->
   <div id="vinyl-rain-container"></div>
 
-  <!-- Efeito de Textura no Fundo -->
+  <!--Efeito de Textura no Fundo-->
   <div class="grain-overlay"></div>
 
-  <!-- Conteúdo Principal -->
+  <!--Conteúdo Principal-->
   <main class="hero-container">
     <div class="prism-light"></div>
     <h1 class="band-title">PINK FLOYD</h1>
     <p class="album-subtitle">The Dark Side of the Moon</p>
 
-    <!-- Botões para disparar os dois modais -->
+    <!--Botões para disparar os dois modais -->
     <div class="btn-group">
       <button id="open-album-btn" class="glow-btn">EXPLORAR ÁLBUM</button>
       <button id="open-history-btn" class="glow-btn outline">HISTÓRIA DA BANDA</button>
     </div>
   </main>
 
+  <div id="album-modal" class="modal-overlay">
+    <div class="modal-card">
+      <span class="close-btn" id="close-album-btn">← </span>
+      <h2 class="modal-title">THE DARK SIDE OF THE MOON</h2>
+      <div class="rainbow-bar"></div>
+      <p class="modal-text">
+        Lançado em 1973, o oitavo álbum de estúdio do Pink Floyd explorou temas de ganância, tempo, morte e doença mental. Tornou-se um dos discos mais vendidos e aclamados da história da música.
+      </p>
+      <div class="tracklist">
+        <h3>Faixas de Destaque</h3>
+        <ul>
+          <li><span>01.</span> Time</li>
+          <li><span>02.</span> Money</li>
+          <li><span>03.</span> Us and Them</li>
+          <li><span>04.</span> Brain Damage</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="history-modal" class="modal-overlay">
+    <div class="modal-card">
+      <span class="close-btn" id="close-history-btn">← </span>
+      <h2 class="modal-title">A JORNADA PSICODÉLICA</h2>
+      <div class="rainbow-bar"></div>
+      <p class="modal-text">
+        Formada em Londres em 1965, a banda liderou a cena psicodélica britânica sob a liderança de Syd Barrett. Mais tarde, com David Gilmour e Roger Waters, revolucionou o rock progressivo e os shows em estádio.
+      </p>
+      <div class="band-members">
+        <h3>Integrantes Clássicos</h3>
+        <ul>
+          <li>David Gilmour — Guitarra e Voz</li>
+          <li>Roger Waters — Baixo e Voz</li>
+          <li>Richard Wright — Teclados</li>
+          <li>Nick Mason — Bateria</li>
+          <li>Syd Barrett — Guitarra e Voz (Fase Inicial)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
   <script src="/script/pinkfloyd.js"></script>
 </body>
