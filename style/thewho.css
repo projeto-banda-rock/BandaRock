@@ -1,0 +1,109 @@
+*{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background: linear-gradient(to bottom, #820000, #00005f);;
+        color: #111;
+        font-family: 'Open Sans', sans-serif;
+        min-height: 100vh;
+        padding: 30px;
+    }
+
+    .back {
+        color: #0055a5;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .card {
+        max-width: 900px;
+        margin: 30px auto;
+        background: #dcdcdc;
+        border: 5px solid #eb1123;
+        padding: 40px;
+        border-radius: 16px;
+        box-shadow: 8px 8px 0 #0055a5;
+    }
+
+    h1 {
+        font-family: 'Fredoka One', cursive;
+        font-size: 3.8rem;
+        color: #0055a5;
+        text-align: center;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    p {
+        line-height: 1.8;
+        color: #333;
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+    }
+
+    .btn-mod {
+        background: #eb1123;
+        color: #fff;
+        font-family: 'Fredoka One';
+        font-size: 1.2rem;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .btn-mod:hover {
+        background: #0055a5;
+        box-shadow: 4px 4px 0 #000;
+    }
+
+    /* MODAL 1: Target Pop (Redondo) */
+    .target-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 800;
+    }
+
+    .target-modal {
+        background: #fff;
+        border: 10px solid #eb1123;
+        outline: 10px solid #0055a5;
+        padding: 40px;
+        border-radius: 50%;
+        width: 380px;
+        height: 380px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* MODAL 2: Drawer Direita */
+    .mod-drawer {
+        position: fixed;
+        top: 0;
+        right: -400px;
+        width: 350px;
+        height: 100%;
+        background: #0055a5;
+        color: #fff;
+        padding: 30px;
+        transition: right 0.4s ease;
+        z-index: 801;
+    }
+
+    .mod-drawer.active {
+        right: 0;
+    }
