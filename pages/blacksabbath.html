@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Black Sabbath</title>
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Cinzel:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style/blacksabbath.css">
+</head>
+<body>
+  <a href="index.html" class="back">← Voltar</a>
+  <div class="box">
+    <h1>Black Sabbath</h1>
+    <p>Nas trevas de Birmingham em 1968, Ozzy Osbourne, Tony Iommi, Geezer Butler e Bill Ward deram origem ao Heavy Metal. Utilizando o intervalo "Tritono" (a frequência do diabo) e afinações graves para contornar a limitação física dos dedos acidentados de Iommi, criaram um som denso e sombrio sem precedentes.</p>
+    <div style="display:flex; gap: 20px; justify-content: center;">
+      <button class="btn-doom" onclick="openGothic()">O Tritono</button>
+      <button class="btn-doom" onclick="openBottomGothic()">Ozzy & Iommi</button>
+    </div>
+  </div>
+
+  <div class="bottom-gothic" id="bottomGothic">
+    <div style="max-width: 800px; margin: 0 auto; position: relative;">
+      <h3 style="color:#c77dff; margin-bottom: 10px;">Inovação Forçada pelas Dificuldades</h3>
+      <p style="color:#e0aaff;">Tony Iommi perdeu a ponta de dois dedos em um acidente industrial. Ele criou próteses de plástico e afrouxou as cordas da guitarra para conseguir tocar, inventando acidentalmente o som encorpado do Doom Metal.</p>
+      <button class="btn-doom" style="margin-top: 15px;" onclick="closeBottomGothic()">OK</button>
+    </div>
+  </div>
+
+  <script src="/script/blacksabbath.js"></script>
+</body>
+</html>
