@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  
-  // 1. CHUVA DE DISCOS COLORIDOS
+
   const rainContainer = document.getElementById('vinyl-rain-container');
   const totalVinyls = 35;
   const spectrumColors = ['#e74c3c', '#e67e22', '#f1c40f', '#2ecc71', '#3498db', '#9b59b6', '#ff007f'];
@@ -36,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     generateVinyl();
   }
 
-  // 2. CONTROLE DOS DOIS MODAIS
+  
   const albumModal = document.getElementById('album-modal');
   const historyModal = document.getElementById('history-modal');
 
@@ -46,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const closeAlbumBtn = document.getElementById('close-album-btn');
   const closeHistoryBtn = document.getElementById('close-history-btn');
 
-  // Abrir Modais
+
   openAlbumBtn.addEventListener('click', () => {
     albumModal.style.display = 'flex';
   });
@@ -55,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
     historyModal.style.display = 'flex';
   });
 
-  // Fechar no 'X'
+ 
   closeAlbumBtn.addEventListener('click', () => {
     albumModal.style.display = 'none';
   });
