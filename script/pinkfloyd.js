@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     generateVinyl();
   }
 
-  
+
   const albumModal = document.getElementById('album-modal');
   const historyModal = document.getElementById('history-modal');
 
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
     historyModal.style.display = 'flex';
   });
 
- 
+
   closeAlbumBtn.addEventListener('click', () => {
     albumModal.style.display = 'none';
   });

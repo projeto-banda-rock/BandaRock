@@ -1,5 +1,5 @@
 /* Reset e Base */
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -47,34 +47,50 @@ body {
   background-color: var(--label-color, #ff0055);
   border-radius: 50%;
   border: 2px solid #000;
-  box-shadow: inset 0 0 4px rgba(0,0,0,0.6);
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.6);
 }
 
 @keyframes fallAnimation {
-  0% { top: -100px; opacity: 0; }
-  10% { opacity: 0.9; }
-  90% { opacity: 0.9; }
-  100% { top: 105vh; opacity: 0; }
+  0% {
+    top: -100px;
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  90% {
+    opacity: 0.9;
+  }
+
+  100% {
+    top: 105vh;
+    opacity: 0;
+  }
 }
 
 @keyframes spinAnimation {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-/* Efeito de Fundo */
 .grain-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle, transparent 60%, rgba(0,0,0,0.8) 100%);
+  background: radial-gradient(circle, transparent 60%, rgba(0, 0, 0, 0.8) 100%);
   pointer-events: none;
   z-index: 2;
 }
 
-/* Layout Principal */
 .hero-container {
   position: relative;
   z-index: 3;
@@ -152,7 +168,7 @@ body {
   background: #fff;
 }
 
-/* Modais */
+
 .modal-overlay {
   display: none;
   position: fixed;
@@ -214,7 +230,8 @@ body {
   margin-bottom: 25px;
 }
 
-.tracklist h3, .band-members h3 {
+.tracklist h3,
+.band-members h3 {
   font-size: 0.85rem;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -222,11 +239,13 @@ body {
   margin-bottom: 10px;
 }
 
-.tracklist ul, .band-members ul {
+.tracklist ul,
+.band-members ul {
   list-style: none;
 }
 
-.tracklist li, .band-members li {
+.tracklist li,
+.band-members li {
   font-size: 0.9rem;
   padding: 6px 0;
   border-bottom: 1px solid #1a1a1a;

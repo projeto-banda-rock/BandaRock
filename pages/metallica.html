@@ -3,19 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Metallica - Thrash Metal Supremacy</title>
+  <title>Metallica</title>
   <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Kanit:wght@700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style/metallica.css">
 </head>
 <body>
-  <a href="/index.html" class="back">&larr; Voltar ao Portal</a>
+  <a href="/index.html" class="back">← Voltar ao Portal</a>
   <div class="box">
     <h1>Metallica</h1>
     <p>Liderado por James Hetfield e Lars Ulrich, o Metallica definiu a agressividade e a precisão do Thrash Metal nos anos 80 com álbuns antológicos como "Master of Puppets". Nos anos 90, alcançaram o topo absoluto do planeta com o icônico "Black Album".</p>
     <div style="display:flex; gap: 20px; justify-content: center;">
-      <button class="btn-heavy" onclick="openMetal()">Master of Puppets (Modal Metal)</button>
-      <button class="btn-heavy" style="background:#374151;" onclick="openThrash()">The Black Album (Fullscreen)</button>
+      <button class="btn-heavy" onclick="openMetal()">Master of Puppets</button>
+      <button class="btn-heavy" style="background:#374151;" onclick="openThrash()">The Black Album</button>
     </div>
+  </div>
+
+  <div class="metal-overlay" id="metalModal">
+    <div class="metal-modal">
+      <h2 style="color:#ef4444; font-size: 2rem;">Obra-Prima do Metal</h2>
+      <p style="color:#d1d5db; margin-top: 15px; font-weight: 400;">Lançado em 1986, 'Master of Puppets' foi o primeiro álbum de Thrash Metal preservado na Biblioteca do Congresso dos Estados Unidos por sua importância cultural.</p>
+      <button class="btn-heavy" style="margin-top: 20px; font-size: 1rem; padding: 8px 20px;" onclick="closeMetal()">FECHAR</button>
+    </div>
+  </div>
+
+  <div class="thrash-fs" id="thrashFS">
+    <h2 style="font-family:'Rubik Glitch'; font-size: 3.5rem; color:#ef4444; margin-bottom: 20px;">THE BLACK ALBUM (1991)</h2>
+    <p style="max-width: 650px; text-align: center; color:#9ca3af; font-size: 1.1rem; line-height: 1.8;">Com "Enter Sandman", "Sad But True" e "Nothing Else Matters", este álbum catapultou o Metallica da cena underground para o status de maior banda de heavy metal do planeta.</p>
+    <button class="btn-heavy" style="margin-top: 30px;" onclick="closeThrash()">VOLTAR</button>
   </div>
 
   <script src="/script/metallica.js"></script>
