@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nirvana</title>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style/nirvana.css">
+</head>
+<body>
+  <a href="index.html" class="back">← Voltar ao Início</a>
+  <div class="container">
+    <h1>Nirvana</h1>
+    <p>Com a visceralidade de Kurt Cobain, as linhas de baixo marcantes de Krist Novoselic e a bateria avassaladora de Dave Grohl, o Nirvana varreu o hair metal dos anos 80 e colocou o som underground de Seattle no topo do mundo com o lendário "Smells Like Teen Spirit".</p>
+    <div style="display:flex; gap: 20px; justify-content: center;">
+      <button class="btn-grunge" onclick="openNote()">Nevermind </button>
+      <button class="btn-grunge" style="background:#333; color:#fff;" onclick="openGrungePanel()">Kurt Cobain </button>
+    </div>
+  </div>
+
+  <div class="grunge-panel" id="grungePanel">
+    <h2 style="font-family:'Permanent Marker'; color:#facc15; font-size: 2rem; margin-bottom: 20px;">O Legado Grunge</h2>
+    <p style="color:#aaa; font-size: 0.95rem; line-height: 1.7;">Kurt Cobain trouxe a estética da simplicidade, guitarras distorcidas com pedais Boss DS-1 e letras poéticas e angustiadas, alterando permanentemente a cultura jovem dos anos 90.</p>
+    <button class="btn-grunge" style="margin-top: 30px; font-size: 1rem;" onclick="closeGrungePanel()">Fechar</button>
+  </div>
+
+  <script src="/script/nirvana.js"></script>
+</body>
+</html>
