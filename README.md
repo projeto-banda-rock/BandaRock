@@ -52,5 +52,3 @@ Diferente de um site institucional, a plataforma combina interatividade com uma 
 [x] Experiência Visual Imersiva: Imagens de fundo ajustadas, filtros de opacidade e efeitos visuais adaptados a cada artista.
 
 [x] Rodapé Padronizado: Presença de copyright fixo na página inicial para identificação.
-
-[x] CRUD Completo via Backend: Gerenciamento de Bandas, Integrantes e Álbuns.
