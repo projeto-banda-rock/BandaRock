@@ -1,4 +1,9 @@
-*{ box-sizing: border-box; margin: 0; padding: 0; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: #0d0d0d;
   background-image: radial-gradient(circle at 50% 50%, #1a1a1a 0%, #050505 100%);
@@ -8,12 +13,14 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 header {
   padding: 40px 20px;
   text-align: center;
-  background: linear-gradient(180deg, rgba(0,0,0,0.9), transparent);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.9), transparent);
   border-bottom: 2px solid #333;
 }
+
 h1 {
   font-family: 'Metal Mania', cursive;
   font-size: 3.5rem;
@@ -21,7 +28,12 @@ h1 {
   text-shadow: 0 0 15px rgba(229, 9, 20, 0.6);
   letter-spacing: 3px;
 }
-p.subtitle { font-size: 1.1rem; color: #888; margin-top: 10px; }
+
+p.subtitle {
+  font-size: 1.1rem;
+  color: #888;
+  margin-top: 10px;
+}
 
 .grid-container {
   display: grid;
@@ -33,6 +45,7 @@ p.subtitle { font-size: 1.1rem; color: #888; margin-top: 10px; }
   width: 100%;
   flex: 1;
 }
+
 .band-card {
   background: #141414;
   border: 1px solid #282828;
@@ -46,21 +59,25 @@ p.subtitle { font-size: 1.1rem; color: #888; margin-top: 10px; }
   flex-direction: column;
   justify-content: space-between;
 }
+
 .band-card:hover {
   transform: translateY(-8px);
   border-color: #e50914;
   box-shadow: 0 10px 25px rgba(229, 9, 20, 0.3);
 }
+
 .band-card h2 {
   font-size: 1.6rem;
   color: #fff;
   margin-bottom: 10px;
 }
+
 .band-card p {
   font-size: 0.9rem;
   color: #aaa;
   margin-bottom: 20px;
 }
+
 .btn-visit {
   display: inline-block;
   padding: 12px 20px;
@@ -73,7 +90,10 @@ p.subtitle { font-size: 1.1rem; color: #888; margin-top: 10px; }
   letter-spacing: 1px;
   transition: background 0.2s;
 }
-.btn-visit:hover { background: #b20710; }
+
+.btn-visit:hover {
+  background: #b20710;
+}
 
 footer {
   text-align: center;

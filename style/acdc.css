@@ -1,103 +1,103 @@
-*{
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-    body {
-        background: #000;
-        color: #fff;
-        font-family: 'Oswald', sans-serif;
-        min-height: 100vh;
-        padding: 30px;
-    }
+body {
+    background: #000;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    min-height: 100vh;
+    padding: 30px;
+}
 
-    .nav {
-        color: #ffcc00;
-        text-decoration: none;
-        font-size: 1.2rem;
-    }
+.nav {
+    color: #ffcc00;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
 
-    .container {
-        max-width: 900px;
-        margin: 30px auto;
-        border: 4px solid #ff0000;
-        background: #0a0a0a;
-        padding: 40px;
-        box-shadow: 0 0 20px #ff0000;
-    }
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    border: 4px solid #ff0000;
+    background: #0a0a0a;
+    padding: 40px;
+    box-shadow: 0 0 20px #ff0000;
+}
 
-    h1 {
-        font-family: 'Bangers', cursive;
-        font-size: 4rem;
-        text-align: center;
-        color: #ffcc00;
-        text-shadow: 4px 4px 0 #ff0000;
-        letter-spacing: 2px;
-    }
+h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 4rem;
+    text-align: center;
+    color: #ffcc00;
+    text-shadow: 4px 4px 0 #ff0000;
+    letter-spacing: 2px;
+}
 
-    p {
-        line-height: 1.7;
-        font-size: 1.2rem;
-        color: #ddd;
-        margin-top: 20px;
-        margin-bottom: 30px;
-    }
+p {
+    line-height: 1.7;
+    font-size: 1.2rem;
+    color: #ddd;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
 
-    .btn-acdc {
-        background: #ff0000;
-        color: #ffcc00;
-        font-family: 'Bangers';
-        font-size: 1.5rem;
-        border: none;
-        padding: 10px 25px;
-        cursor: pointer;
-        letter-spacing: 1px;
-    }
+.btn-acdc {
+    background: #ff0000;
+    color: #ffcc00;
+    font-family: 'Bangers';
+    font-size: 1.5rem;
+    border: none;
+    padding: 10px 25px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
 
-    .btn-acdc:hover {
-        background: #ffcc00;
-        color: #ff0000;
-    }
+.btn-acdc:hover {
+    background: #ffcc00;
+    color: #ff0000;
+}
 
-    /* MODAL 1: Corner Pop-Up */
-    .corner-modal {
-        position: fixed;
-        bottom: -300px;
-        right: 20px;
-        width: 320px;
-        background: #111;
-        border: 3px solid #ffcc00;
-        padding: 20px;
-        z-index: 600;
-        transition: bottom 0.4s ease;
-        box-shadow: 0 0 15px rgba(255, 204, 0, 0.5);
-    }
+/* MODAL 1: Corner Pop-Up */
+.corner-modal {
+    position: fixed;
+    bottom: -300px;
+    right: 20px;
+    width: 320px;
+    background: #111;
+    border: 3px solid #ffcc00;
+    padding: 20px;
+    z-index: 600;
+    transition: bottom 0.4s ease;
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.5);
+}
 
-    .corner-modal.open {
-        bottom: 20px;
-    }
+.corner-modal.open {
+    bottom: 20px;
+}
 
-    /* MODAL 2: Center Lightning */
-    .modal-shock {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(255, 0, 0, 0.2);
-        display: none;
-        justify-content: center;
-        align-items: center;
-        z-index: 601;
-        backdrop-filter: blur(5px);
-    }
+/* MODAL 2: Center Lightning */
+.modal-shock {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 0, 0, 0.2);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 601;
+    backdrop-filter: blur(5px);
+}
 
-    .shock-card {
-        background: #000;
-        border: 4px solid #ffcc00;
-        padding: 30px;
-        max-width: 450px;
-        text-align: center;
-        box-shadow: 0 0 30px #ffcc00;
-    }
+.shock-card {
+    background: #000;
+    border: 4px solid #ffcc00;
+    padding: 30px;
+    max-width: 450px;
+    text-align: center;
+    box-shadow: 0 0 30px #ffcc00;
+}
